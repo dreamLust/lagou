@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    let num = prompt('请输入你要的操作' +
+        '\n1存钱' +
+        '\n2取钱' +
+        '\n3显示余额' +
+        '\n4退出')
+    let yue = 100;
+    num = parseInt(num);
+    switch (num)
+    {
+        case 1:
+
+            let cunqian = prompt("请输入您存入的金额");
+            cunqian = parseInt(cunqian);
+            alert("你现在的余额是"+(cunqian+yue)+"元");
+            break;
+
+        case 2:
+
+
+
+
+            while(1) {
+                let quqian = prompt("请输入你想取的金额")
+                quqian = parseInt(quqian)
+                if (quqian <= yue) {
+
+                    alert("你现在的余额是" + (yue - quqian) + "元");
+                    break;
+                    // history.back           //未完成
+                }
+                alert("余额不足")
+
+                }
+            break;
+
+
+        case 3:
+
+                alert("您现在的余额是"+yue+"元");
+            break;
+
+
+        case 4:
+
+                alert("您已经退出");
+            break;
+    }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
